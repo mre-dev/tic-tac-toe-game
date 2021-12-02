@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+    <title>CW10</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Tic Tac Toe</h1>
+        <div class="title">
+            <h4 id="currentPlayer">Turn Player :</h4><span id="turnplayer">&nbsp;X</span>
+        </div>
+        <hr id="hr">
+        <div class="game-main" id="ticTokPlace">
+            <div id="board"></div>
+            <div class="row-1">
+                <div class="cell" id="0" onclick="realValidateGame(this.id);"></div>
+                <div class="cell" id="3" onclick="realValidateGame(this.id);"></div>
+                <div class="cell" id="6" onclick="realValidateGame(this.id);"></div>
+            </div>
+            <div class="row-2">
+                <div class="cell" id="1" onclick="realValidateGame(this.id);"></div>
+                <div class="cell" id="4" onclick="realValidateGame(this.id);"></div>
+                <div class="cell" id="7" onclick="realValidateGame(this.id);"></div>
+            </div>
+            <div class="row-3">
+                <div class="cell" id="2" onclick="realValidateGame(this.id);"></div>
+                <div class="cell" id="5" onclick="realValidateGame(this.id);"></div>
+                <div class="cell" id="8" onclick="realValidateGame(this.id);"></div>
+            </div>
+        </div>
+        <button class="btn" onclick="resetGame()">Reset</button>
+    </div>
+
+</body>
+
+</html>
